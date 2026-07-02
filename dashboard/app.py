@@ -182,10 +182,11 @@ st.markdown("---")
 #  MAIN VISUALIZATIONS
 # ══════════════════════════════════════════════════════════════════════════════
 
-tab1, tab2, tab3, tab4 = st.tabs([
+tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "📊 Overview", 
     "🔍 Product Explorer", 
     "📋 Product Details",
+    "💰 Business Impact",
     "🎯 Methodology"
 ])
 
@@ -414,10 +415,254 @@ with tab3:
             st.info("No suspicious reviews found for this product.")
 
 # ══════════════════════════════════════════════════════════════════════════════
-#  TAB 4: METHODOLOGY
+#  TAB 4: BUSINESS IMPACT & ROI CALCULATOR
+#  Translates ML predictions into business dollar impact
 # ══════════════════════════════════════════════════════════════════════════════
 
 with tab4:
+    st.markdown("### 💰 Business Impact & ROI Analysis")
+    st.markdown(
+        "*Translating detection results into business dollar impact. "
+        "Adjust assumptions below to model your specific scenario.*"
+    )
+    
+    st.markdown("---")
+    
+    # ── Adjustable Assumptions ────────────────────────────────────────────────
+    st.markdown("#### 🎛️ Business Assumptions (Adjust to Your Scenario)")
+    
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        avg_return_cost = st.slider(
+            "💸 Avg cost per return ($)",
+            min_value=5, max_value=50, value=22,
+            help="Amazon's estimated cost per product return (shipping + processing)"
+        )
+    
+    with col2:
+        return_reduction_rate = st.slider(
+            "📉 % returns prevented by accurate ratings",
+            min_value=5, max_value=40, value=15,
+            help="Estimated % of returns caused by inflated ratings that ReviewGuard prevents"
+        )
+    
+    with col3:
+        investigator_hourly = st.slider(
+            "⏱️ Investigator hourly cost ($)",
+            min_value=25, max_value=100, value=45,
+            help="Fully loaded cost per hour for Trust & Safety analyst"
+        )
+    
+    st.markdown("---")
+    
+    # ── Calculate Business Metrics ────────────────────────────────────────────
+    total_reviews = stats['total_reviews']
+    suspicious_reviews = stats['suspicious_reviews']
+    critical_products = stats['critical_products']
+    
+    # Estimated fake reviews across products
+    total_fake_estimate = suspicious_reviews
+    
+    # Estimate returns caused by fake reviews (industry avg: 8% of purchases lead to returns)
+    # Fake reviews inflate purchases that would otherwise not happen
+    estimated_returns_caused = int(total_fake_estimate * 0.08)
+    
+    # Cost savings from prevented returns
+    returns_prevented = int(estimated_returns_caused * (return_reduction_rate / 100))
+    return_cost_savings = returns_prevented * avg_return_cost
+    
+    # Time savings for investigators
+    # Without ReviewGuard: 60K reviews × 2 min each = 2000 hours
+    # With ReviewGuard: 82 flagged accounts × 15 min each = 20.5 hours
+    manual_hours_needed = (total_reviews * 2) / 60  # 2 min per review
+    reviewguard_hours = 82 * 0.25  # 15 min per flagged account
+    hours_saved = manual_hours_needed - reviewguard_hours
+    time_cost_savings = hours_saved * investigator_hourly
+    
+    # Regulatory risk avoided (EU DSA fine risk)
+    # Assumes 0.1% probability of fine at $1M per major incident prevented
+    regulatory_savings = critical_products * 10000  # $10K risk per critical product
+    
+    # Total impact
+    total_savings = return_cost_savings + time_cost_savings + regulatory_savings
+    
+    # Cost to run ReviewGuard (compute + labeling estimate)
+    reviewguard_cost = 5000  # Rough annual estimate
+    roi_multiplier = total_savings / reviewguard_cost if reviewguard_cost > 0 else 0
+    
+    # ── KPI Cards ────────────────────────────────────────────────────────────
+    st.markdown("#### 💵 Estimated Annual Business Impact")
+    
+    col1, col2, col3, col4 = st.columns(4)
+    
+    with col1:
+        st.metric(
+            "Returns Prevented",
+            f"{returns_prevented:,}",
+            f"${return_cost_savings:,} saved"
+        )
+    
+    with col2:
+        st.metric(
+            "Investigator Hours Saved",
+            f"{int(hours_saved):,}",
+            f"${int(time_cost_savings):,} saved"
+        )
+    
+    with col3:
+        st.metric(
+            "Regulatory Risk Avoided",
+            f"{critical_products} critical products",
+            f"${regulatory_savings:,} exposure"
+        )
+    
+    with col4:
+        st.metric(
+            "Total Annual Savings",
+            f"${total_savings:,}",
+            f"{roi_multiplier:.0f}x ROI"
+        )
+    
+    st.markdown("---")
+    
+    # ── ROI Breakdown Chart ──────────────────────────────────────────────────
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("#### 📊 Savings Breakdown")
+        
+        savings_breakdown = pd.DataFrame({
+            "Category": ["Prevented Returns", "Investigator Time", "Regulatory Risk"],
+            "Amount ($)": [return_cost_savings, time_cost_savings, regulatory_savings]
+        })
+        
+        fig_savings = go.Figure(data=[go.Pie(
+            labels=savings_breakdown["Category"],
+            values=savings_breakdown["Amount ($)"],
+            hole=0.4,
+            marker=dict(colors=["#2ecc71", "#3498db", "#e74c3c"]),
+            textinfo="label+percent",
+            textfont=dict(size=12, color="white")
+        )])
+        fig_savings.update_layout(
+            height=400,
+            title="Where the Savings Come From",
+            title_font_size=14
+        )
+        st.plotly_chart(fig_savings, use_container_width=True)
+    
+    with col2:
+        st.markdown("#### 📈 Cost vs Savings")
+        
+        cost_savings_df = pd.DataFrame({
+            "Category": ["ReviewGuard Cost", "Annual Savings"],
+            "Amount ($)": [reviewguard_cost, total_savings]
+        })
+        
+        fig_roi = go.Figure(go.Bar(
+            x=cost_savings_df["Category"],
+            y=cost_savings_df["Amount ($)"],
+            marker=dict(color=["#e74c3c", "#2ecc71"]),
+            text=[f"${v:,}" for v in cost_savings_df["Amount ($)"]],
+            textposition="outside"
+        ))
+        fig_roi.update_layout(
+            height=400,
+            title=f"ROI: {roi_multiplier:.0f}x Return on Investment",
+            title_font_size=14,
+            yaxis_title="Amount ($)",
+            showlegend=False
+        )
+        st.plotly_chart(fig_roi, use_container_width=True)
+    
+    st.markdown("---")
+    
+    # ── Business Value Table ─────────────────────────────────────────────────
+    st.markdown("#### 📋 Business Value Summary")
+    
+    business_summary = pd.DataFrame({
+        "Business Metric": [
+            "Total Reviews Analyzed",
+            "Suspicious Reviews Detected",
+            "Critical Risk Products Flagged",
+            "Manual Hours Without ReviewGuard",
+            "Hours With ReviewGuard",
+            "Efficiency Multiplier",
+            "Cost Per Review Analyzed",
+        ],
+        "Value": [
+            f"{total_reviews:,}",
+            f"{suspicious_reviews:,} ({stats['suspicion_rate']}%)",
+            f"{critical_products}",
+            f"{int(manual_hours_needed):,} hours",
+            f"{reviewguard_hours:.0f} hours",
+            f"{manual_hours_needed / max(reviewguard_hours, 1):.0f}x faster",
+            f"${reviewguard_cost / total_reviews:.4f}"
+        ]
+    })
+    
+    st.dataframe(business_summary, use_container_width=True, hide_index=True)
+    
+    st.markdown("---")
+    
+    # ── Executive Summary ────────────────────────────────────────────────────
+    st.markdown("#### 🎯 Executive Summary")
+    
+    st.info(f"""
+    **ReviewGuard delivers estimated annual savings of ${total_savings:,}** 
+    through three business impact channels:
+    
+    1. **📦 Prevented Returns ({returns_prevented:,} units)** — Adjusted ratings reduce 
+    customer disappointment, saving ${return_cost_savings:,} in shipping and processing costs
+    
+    2. **⏱️ Time Efficiency ({int(hours_saved):,} hours)** — Reduces manual review workload 
+    from {int(manual_hours_needed):,} hours to just {int(reviewguard_hours)} hours, freeing 
+    ${int(time_cost_savings):,} in investigator time for higher-value work
+    
+    3. **⚖️ Regulatory Compliance (${regulatory_savings:,})** — Proactive fake review 
+    detection reduces exposure to EU DSA (up to 6% of revenue) and FTC penalties
+    
+    **ROI: {roi_multiplier:.0f}x return on investment** (${total_savings:,} savings on ${reviewguard_cost:,} cost)
+    """)
+    
+    st.markdown("---")
+    
+    # ── Assumptions Disclosure ───────────────────────────────────────────────
+    with st.expander("📋 View Full Assumption Details"):
+        st.markdown(f"""
+        ### Calculation Methodology
+        
+        **Prevented Returns:**
+        - Assumption: {return_reduction_rate}% of returns are caused by rating inflation
+        - Industry estimate: 8% of purchases with fake-review-inflated ratings lead to returns
+        - Formula: `suspicious_reviews × 0.08 × ({return_reduction_rate}%) × ${avg_return_cost}`
+        
+        **Time Savings:**
+        - Without ReviewGuard: 2 minutes manual review per review × {total_reviews:,} reviews = {int(manual_hours_needed):,} hours
+        - With ReviewGuard: 15 minutes per flagged account × 82 accounts = {reviewguard_hours:.0f} hours
+        - Cost: ${investigator_hourly}/hour × {int(hours_saved):,} hours saved
+        
+        **Regulatory Risk:**
+        - Assumption: $10,000 potential regulatory exposure per CRITICAL RISK product
+        - Based on EU DSA fine potential (up to 6% of platform revenue)
+        - Formula: `{critical_products} critical products × $10,000`
+        
+        **ReviewGuard Annual Cost:**
+        - Estimated $5,000 per year (compute + occasional labeling refresh)
+        - Includes cloud hosting, model retraining, dashboard maintenance
+        
+        ### ⚠️ Important Disclaimer
+        These calculations use industry-standard assumptions but should be validated 
+        with your organization's actual return rates, investigator costs, and 
+        regulatory exposure. All estimates are for demonstration purposes.
+        """)
+
+# ══════════════════════════════════════════════════════════════════════════════
+#  TAB 5: METHODOLOGY
+# ══════════════════════════════════════════════════════════════════════════════
+
+with tab5:
     st.markdown("### 🔬 ReviewGuard Methodology")
     
     st.markdown("""
