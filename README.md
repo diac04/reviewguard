@@ -124,7 +124,8 @@ I evaluated both random and chronological train/test splits to understand true m
 | Random 75/25 | XGBoost | 0.40 | 0.57 | Can leak future patterns |
 | **Time-based** ⭐ | **Logistic Regression** | **0.525** | **0.548** | **Honest generalization** |
 
-**Key Insight:** Time-based splitting (training on older reviews, testing on newer) actually improved performance by 31%. This suggests fake review patterns in the dataset are temporally consistent, and simpler linear models generalize better than complex ensembles when properly evaluated. This demonstrates why **evaluation methodology matters more than model complexity**.
+
+- **Key Insight:** Time-based splitting (training on older reviews, testing on newer) actually improved performance by 31%. This suggests fake review patterns in the dataset are temporally consistent, and simpler linear models generalize better than complex ensembles when properly evaluated. This demonstrates why *evaluation methodology matters more than model complexity*.
 ---
 
 ## 🎓 Notable Technical Insights
@@ -157,6 +158,18 @@ reviewguard/
 ├── requirements.txt
 └── README.md
 ```
+### 🎯 The v2.0 Methodology Improvement Story
+
+My project evolved through rigorous self-assessment:
+
+| Metric | v1.0 (Random Split) | v2.0 (Time-Based Split) | Improvement |
+|--------|:-------------------:|:-----------------------:|:-----------:|
+| **Best Model** | XGBoost | Logistic Regression | Simpler = better |
+| **Test F1** | 0.40 | **0.525** | +31% |
+| **CV Trust** | Leaky (inflated) | Pipeline-based | Honest metrics |
+| **Documentation** | Standard | + Validation doc | Senior-level |
+
+**Key insight:** Methodology improvements yielded larger performance gains than any single model tweak. Rigorous evaluation reveals truth that random splits and leaky CV hide.
 
 ## 📋 Transparent Assessment
 
