@@ -2,13 +2,40 @@
 
 ### Multi-Signal Fake Review Detection System for Amazon
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://reviewguard-diac04.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://reviewguard-diac04.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](https://python.org)
 [![XGBoost](https://img.shields.io/badge/ML-XGBoost-EB6F16)](https://xgboost.ai)
 
 Combines **statistical analysis**, **machine learning**, and **graph theory** to detect coordinated fake reviews on Amazon products. Analyzes 59K reviews across 89 products, identifies fake reviewer networks, and produces per-product trust scores.
 
 **🚀 [Try the Live Demo](https://reviewguard-diac04.streamlit.app)**
+
+
+---
+
+## 📸 Dashboard Preview
+
+### Overview — Executive Summary
+![Overview](dashboard\screenshots\landingpage.png)
+![Overview](dashboard\screenshots\overview1.png)
+![Overview](dashboard\screenshots\overview2.png)
+
+
+### Product Explorer — Filter & Search 89 Products
+![Product Explorer](dashboard\screenshots\productexplorer.png)
+
+### Product Details — Deep-Dive Analysis
+![Product Details](dashboard\screenshots\prpductdetails1.png)
+![Product Details](dashboard\screenshots\productdetails2.png)
+
+
+
+### Methodology — Multi-Signal Approach
+![Methodology](dashboard\screenshots\methodology1.png)
+![Methodology](dashboard\screenshots\methodology2.png)
+
+
+
 
 ---
 
