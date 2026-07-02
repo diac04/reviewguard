@@ -77,7 +77,26 @@ Three complementary detection techniques combined into a unified trust score:
 Chi-square tests, Mann-Whitney U tests, review burst detection, temporal pattern analysis
 
 ### 🤖 Phase 3 — Machine Learning (30% weight)
-XGBoost classifier with 126 features (TF-IDF + behavioral), SMOTE class balancing, 5-fold stratified cross-validation
+*Classify individual reviews as FAKE / GENUINE.*
+
+**Winner: Logistic Regression + TF-IDF — F1 = 0.525**
+
+| Model | F1 (time-based) | Notes |
+|-------|----------------|-------|
+| Logistic Regression | **0.525** | Winner — sparse features favor linear models |
+| XGBoost | 0.383 | Overfits at n=300 |
+| Random Forest | 0.364 | Same issue |
+
+**Why Logistic Regression beat XGBoost:**  
+TF-IDF produces sparse high-dimensional features.  
+Linear models are specifically well-suited to this regime.  
+XGBoost's complexity is a liability, not an asset, at 300 training samples.
+
+**Why BERT embeddings made it worse:**
+- TF-IDF only: F1 = 0.525
+- TF-IDF + BERT (384d): F1 = 0.469 ← dropped
+
+- 510 features / 225 training samples = 0.44 ratio. Curse of dimensionality guaranteed at this ratio.
 
 ### 🕸️ Phase 4 — Network Analysis (40% weight)
 Bipartite reviewer-product graph, Louvain community detection, coordinated behavior identification
@@ -85,6 +104,10 @@ Bipartite reviewer-product graph, Louvain community detection, coordinated behav
 Suspicion Score = 0.30 × Phase2 + 0.30 × Phase3 + 0.40 × Phase4
 Trust Score = 100 - Suspicion Score
 
+Rings discovered: 3
+Reviewers flagged: 82
+Precision@10: 70%
+Precision@30: 23% ← signal degrades beyond top rankings
 
 ---
 
