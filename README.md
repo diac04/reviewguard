@@ -42,8 +42,30 @@ Combines **statistical analysis**, **machine learning**, and **graph theory** to
 | Products Scored | **89** |
 | Fake Review Rings Detected | **3** |
 | Suspicious Reviewers Identified | **82** |
-| Ground Truth Reliability (Cohen's κ) | **0.92** |
+| Label Stability Score (Cohen's κ formula) | **0.92** |
 | Critical Risk Products Flagged | **5** |
+
+---
+
+## ⚠️ Methodology Note
+
+**Ground Truth Labeling Approach:**  
+Since manually labeling reviews at scale is time-intensive, ReviewGuard uses a **heuristic scoring system** to generate 300 stratified ground truth labels. This scoring combines multiple signals (rating patterns, verification status, review length, temporal bursts) into a suspicion score (0-10), which is then thresholded into FAKE / GENUINE / UNCERTAIN categories.
+
+**Label Validation:**  
+To test label robustness, I ran a **Label Stability Test** using Cohen's κ formula, which measures how consistent labels remain under simulated noise (κ = 0.92, indicating high stability).
+
+**Important Distinction:**  
+This measures **label stability under perturbation**, NOT true inter-annotator agreement. Genuine inter-rater reliability would require independent human annotators labeling the same samples using identical rubrics — documented as future work for production deployment.
+
+**What This Means for Interpretation:**  
+- ✅ Labels are **robust** — small changes in the heuristic don't dramatically shift results
+- ✅ Results are **reproducible** — anyone can regenerate labels using the documented rubric
+- ⚠️ Labels are **heuristic-based** — not human-validated at scale
+- ⚠️ Should be treated as **weak supervision**, not gold-standard ground truth
+
+For production deployment, next steps would include: recruiting 3-5 independent annotators, computing genuine κ, and expanding to 5,000+ manually labeled samples.
+
 
 ---
 
