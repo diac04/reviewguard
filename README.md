@@ -158,7 +158,11 @@ reviewguard/
 └── README.md
 ```
 
+## 📋 Transparent Assessment
 
+**[📄 View Full Validation & Limitations Document →](VALIDATION_AND_LIMITATIONS.md)**
+
+For a transparent breakdown of what this project rigorously validates vs what remains heuristic, including known biases and production-readiness gap analysis, see the linked document. This kind of honest documentation is what separates portfolio demos from production-ready systems.
 ---
 
 ## 🚀 Quick Start
