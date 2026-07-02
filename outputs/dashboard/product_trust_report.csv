@@ -1,0 +1,97 @@
+product_id,product_name,trust_score,trust_level,avg_rating,adjusted_rating,rating_inflation,total_reviews,suspicious_count,clean_review_count,pct_suspicious,five_star_rate,recommendation_rate,phase2_score,phase3_score,phase4_score,ml_fake_count,ml_high_confidence_fake
+AV-EVZITKZqtpbFMSoqc,"All-New Kindle Oasis E-reader - 7 High-Resolution Display (300 ppi), Waterproof, Built-In Audible, 8 GB, Wi-Fi - Includes Special Offers",32.9,CRITICAL RISK,4.59,4.56,0.04,22,13,9,59.1,0.68,0.95,35.0,55.2,100.0,12,11
+AWFFfd9KIwln0LfXiOe0,Fire TV Stick Streaming Media Player Pair Kit,34.9,CRITICAL RISK,5.0,5.0,0.0,6,4,2,66.7,1.0,0.0,60.0,23.8,100.0,1,0
+AWP6zKOtIwln0LfXnf2p,"All-New Kindle Oasis E-reader - 7 High-Resolution Display (300 ppi), Waterproof, Built-In Audible, 32 GB, Wi-Fi - Includes Special Offers",35.0,CRITICAL RISK,4.43,4.67,-0.24,7,4,3,57.1,0.57,0.86,29.5,53.8,100.0,4,2
+AWMjT0WguC1rwyj_rFh3,Amazon - Echo Plus w/ Built-In Hub - Silver,35.6,CRITICAL RISK,4.75,4.75,-0.0,590,221,369,37.5,0.8,0.98,45.7,35.7,100.0,178,115
+AVpflnS7ilAPnD_xehxE,AmazonBasics 15.6-Inch Laptop and Tablet Bag,38.5,CRITICAL RISK,4.52,4.77,-0.25,21,8,13,38.1,0.67,0.0,33.7,38.1,100.0,7,7
+AVzYlGnuGV-KLJ3abPUD,"All-New Fire 7 Tablet with Alexa, 7"" Display, 8 GB - Marine Blue",40.3,LOW TRUST,4.59,4.53,0.06,82,25,57,30.5,0.67,0.96,36.5,29.0,100.0,21,16
+AVzNj1Y0GV-KLJ3aarCo,"All-New Fire HD 8 Tablet with Alexa, 8 HD Display, 32 GB, Marine Blue - with Special Offers",44.8,LOW TRUST,4.6,4.54,0.06,160,66,94,41.2,0.71,0.94,39.3,38.2,80.0,56,41
+AVzYlGkFvKc47QAVeZRI,"All-New Fire HD 8 Tablet with Alexa, 8 HD Display, 16 GB, Marine Blue - with Special Offers",45.5,LOW TRUST,4.58,4.53,0.05,882,347,535,39.3,0.67,0.96,38.7,37.8,78.9,310,199
+AWFUWc8THh53nbDRF6YO,"Amazon Echo Show Alexa-enabled Bluetooth Speaker with 7"" Screen",45.8,LOW TRUST,4.67,4.67,-0.0,648,240,408,37.0,0.74,0.96,42.7,35.6,76.7,209,129
+AVqVGZSEQMlgsOJE6eUc,"Kindle E-reader - White, 6 Glare-Free Touchscreen Display, Wi-Fi - Includes Special Offers",46.5,LOW TRUST,4.55,4.58,-0.03,304,165,139,54.3,0.63,0.94,25.5,49.1,77.7,152,112
+AVqVGZN9QMlgsOJE6eUZ,"Brand New Amazon Kindle Fire 16gb 7 Ips Display Tablet Wifi 16 Gb Blue,,,",50.0,LOW TRUST,4.63,4.52,0.11,63,42,21,66.7,0.73,0.94,19.1,58.3,67.0,39,31
+AVqVGZQBQMlgsOJE6eUb,"Kindle Oasis E-reader with Leather Charging Cover - Walnut, 6 High-Resolution Display (300 ppi), Wi-Fi - Includes Special Offers",51.1,LOW TRUST,4.61,4.55,0.07,62,40,22,64.5,0.71,0.95,19.6,55.7,65.7,37,26
+AVwjfXqqQMlgsOJE8qmm,"All-New Fire HD 8 Kids Edition Tablet, 8 HD Display, 32 GB, Pink Kid-Proof Case",51.2,LOW TRUST,4.64,4.61,0.03,293,103,190,35.2,0.73,0.97,41.6,32.5,66.4,82,48
+AWK8z0pOIwln0LfXlSxH,"Amazon Echo Show Alexa-enabled Bluetooth Speaker with 7"" Screen",51.4,LOW TRUST,4.65,4.68,-0.03,196,78,118,39.8,0.73,0.94,42.3,36.4,62.5,67,43
+AVwjfXp4QMlgsOJE8qmk,"All-New Fire HD 8 Kids Edition Tablet, 8 HD Display, 32 GB, Blue Kid-Proof Case",52.7,LOW TRUST,4.63,4.62,0.01,233,84,149,36.1,0.77,0.95,43.3,34.0,60.2,69,46
+AVzvV7FHglJLPUi8GzhD,"Two Door Top Load Pet Kennel Travel Crate Dog Cat Pet Cage Carrier Box Tray 23""",55.7,LOW TRUST,5.0,5.0,0.0,1,1,0,100.0,1.0,0.0,50.0,97.7,0.0,1,1
+AVphPmHuilAPnD_x3E5h,"Kindle Voyage E-reader, 6 High-Resolution Display (300 ppi) with Adaptive Built-in Light, PagePress Sensors, Wi-Fi - Includes Special Offers,",58.9,LOW TRUST,4.73,4.71,0.02,599,359,240,59.9,0.78,0.98,22.0,55.9,44.3,356,260
+AVzYlGj3vKc47QAVeZRH,"Amazon Fire HD 8 with Alexa (8"" HD Display Tablet)",60.4,MEDIUM TRUST,4.61,4.6,0.01,130,48,82,36.9,0.7,0.98,37.9,38.2,41.9,45,31
+AVqkIhkhv8e3D1O-lebZ,"All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 16 GB - Includes Special Offers, Blue",60.4,MEDIUM TRUST,4.55,4.47,0.09,89,46,43,51.7,0.63,0.97,19.0,39.9,54.7,36,21
+AVpgdkC8ilAPnD_xsvyi,"Echo (White),,,
+Echo (White),,,",61.8,MEDIUM TRUST,4.51,4.51,-0.0,1031,453,578,43.9,0.63,0.95,20.9,38.4,51.1,390,242
+AVqVGZNvQMlgsOJE6eUY,"Amazon Kindle Fire Hd (3rd Generation) 8gb,,,
+Amazon Kindle Fire Hd (3rd Generation) 8gb,,,",61.9,MEDIUM TRUST,4.49,4.49,0.0,261,133,128,51.0,0.62,0.92,21.3,49.4,42.2,131,95
+AVqkIh8WQMlgsOJE6fu-,"All-New Fire HD 8 Tablet, 8"" HD Display, Wi-Fi, 32 GB - Includes Special Offers, Black",62.6,MEDIUM TRUST,4.56,4.51,0.06,149,78,71,52.3,0.69,0.95,18.5,45.0,45.9,68,46
+AVqkIdZiv8e3D1O-leaJ,"Fire Tablet with Alexa, 7"" Display, 16 GB, Magenta - with Special Offers",63.0,MEDIUM TRUST,4.51,4.51,0.0,764,333,431,43.6,0.63,0.96,20.2,37.9,48.9,282,173
+AVqkIj9snnc1JgDc3khU,"Fire HD 8 Tablet with Alexa, 8 HD Display, 32 GB, Tangerine - with Special Offers,",63.1,MEDIUM TRUST,4.59,4.52,0.07,165,88,77,53.3,0.7,0.96,19.3,46.1,43.1,79,51
+AVqkIhxunnc1JgDc3kg_,"Brand New Amazon Kindle Fire 16gb 7 Ips Display Tablet Wifi 16 Gb Blue,,,",64.8,MEDIUM TRUST,4.6,4.59,0.01,2442,936,1506,38.3,0.67,0.97,19.9,36.2,45.9,819,536
+AVzvXXxbvKc47QAVfRhy,"Fire Tablet, 7 Display, Wi-Fi, 8 GB - Includes Special Offers, Black",64.9,MEDIUM TRUST,5.0,5.0,0.0,3,2,1,66.7,1.0,0.0,50.0,66.9,0.0,2,2
+AVqVGWQDv8e3D1O-ldFr,"Fire Tablet, 7 Display, Wi-Fi, 8 GB - Includes Special Offers, Black",65.4,MEDIUM TRUST,4.58,4.57,0.02,2544,968,1576,38.1,0.67,0.96,19.5,36.4,44.7,861,578
+AVqkIh9HQMlgsOJE6fu_,"All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 32 GB - Includes Special Offers, Blue",65.6,MEDIUM TRUST,4.56,4.49,0.07,163,83,80,50.9,0.68,0.94,19.5,45.1,37.5,76,49
+AVpgyLH7ilAPnD_xxQ07,Kindle PowerFast International Charging Kit (for accelerated charging in over 200 countries),65.6,MEDIUM TRUST,4.8,5.0,-0.2,5,4,1,80.0,0.8,0.0,41.3,73.3,0.0,4,4
+AVpfw2hvilAPnD_xh0rH,"Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16 GB, Pink Kid-Proof Case",65.8,MEDIUM TRUST,4.53,4.53,0.0,1663,529,1134,31.8,0.66,0.94,23.1,32.5,43.9,458,272
+AV-ETMhgYSSHbkXwpNb9,"All-New Kindle Oasis E-reader - 7 High-Resolution Display (300 ppi), Waterproof, Built-In Audible, 32 GB, Wi-Fi + Free Cellular Connectivity",65.8,MEDIUM TRUST,4.75,5.0,-0.25,4,3,1,75.0,0.75,1.0,39.2,75.0,0.0,3,3
+AVph0EeEilAPnD_x9myq,"Fire Tablet, 7 Display, Wi-Fi, 8 GB - Includes Special Offers, Black",66.1,MEDIUM TRUST,4.54,4.54,-0.0,1491,493,998,33.1,0.67,0.94,22.0,32.9,43.5,426,248
+AVpe9CMS1cnluZ0-aoC5,"Amazon Kindle Lighted Leather Cover,,,
+Amazon Kindle Lighted Leather Cover,,,",67.3,MEDIUM TRUST,4.0,4.0,0.0,5,5,0,100.0,0.2,0.0,12.7,96.4,0.0,5,5
+AWdDlIX9Hh53nbDRSc-U,Certified Refurbished Amazon Echo,69.2,MEDIUM TRUST,5.0,5.0,0.0,7,5,2,71.4,1.0,0.0,50.0,52.7,0.0,5,1
+AVqkEM34QMlgsOJE6e8q,Unknown Product,70.1,MEDIUM TRUST,5.0,5.0,0.0,1,1,0,100.0,1.0,1.0,20.0,79.6,0.0,1,1
+AWdDioCIHh53nbDRScLV,Cat Litter Box Covered Tray Kitten Extra Large Enclosed Hooded Hidden Toilet,70.3,MEDIUM TRUST,5.0,5.0,0.0,2,1,1,50.0,1.0,0.0,50.0,49.1,0.0,1,1
+AVpi6NtY1cnluZ0-RuRs,Amazon Fire TV Gaming Edition Streaming Media Player,71.5,MEDIUM TRUST,4.67,5.0,-0.33,3,1,2,33.3,0.67,0.0,35.6,59.5,0.0,1,1
+AVpgjNRkilAPnD_xuALS,AmazonBasics USB 3.0 Cable - A-Male to B-Male - 6 Feet (1.8 Meters),72.4,MEDIUM TRUST,5.0,5.0,0.0,6,2,4,33.3,1.0,0.0,50.0,42.1,0.0,2,1
+AVphLY7v1cnluZ0-_Ty0,Unknown Product,72.9,MEDIUM TRUST,3.92,3.0,0.92,13,10,3,76.9,0.54,0.0,21.8,68.7,0.0,10,9
+AVphC37X1cnluZ0-9mbp,AmazonBasics Ventilated Adjustable Laptop Stand,73.8,MEDIUM TRUST,4.0,3.67,0.33,8,5,3,62.5,0.38,0.0,24.2,63.0,0.0,5,2
+AVpioXbb1cnluZ0-PImd,"Brand New Amazon Kindle Fire 16gb 7 Ips Display Tablet Wifi 16 Gb Blue,,,",74.1,MEDIUM TRUST,4.5,5.0,-0.5,2,1,1,50.0,0.5,0.0,28.3,57.8,0.0,1,1
+AVpe7AsMilAPnD_xQ78G,"Fire Tablet, 7 Display, Wi-Fi, 8 GB - Includes Special Offers, Black",74.3,MEDIUM TRUST,4.67,4.75,-0.08,15,7,8,46.7,0.67,0.0,35.6,50.0,0.0,7,3
+AVzvXXXN-jtxr-f3z35Q,Amazon Echo (1st Generationcertified) Color:White Free Shipping,74.4,MEDIUM TRUST,4.31,4.83,-0.53,13,7,6,53.8,0.62,0.0,36.9,48.5,0.0,7,6
+AVpfhcniLJeJML43-t4G,Expanding Accordion File Folder Plastic Portable Document Organizer Letter Size,74.8,MEDIUM TRUST,5.0,5.0,0.0,9,4,5,44.4,1.0,0.0,50.0,34.1,0.0,4,2
+AVpggqsrLJeJML43O5zp,Unknown Product,76.1,MEDIUM TRUST,4.88,4.83,0.04,8,2,6,25.0,0.88,0.0,44.6,35.2,0.0,2,2
+AVqVGZO3nnc1JgDc3jGK,"Kindle Oasis E-reader with Leather Charging Cover - Merlot, 6 High-Resolution Display (300 ppi), Wi-Fi - Includes Special Offers,,",76.2,MEDIUM TRUST,4.62,4.6,0.02,68,43,25,63.2,0.72,0.94,18.6,60.7,0.0,43,35
+AV1YnRtnglJLPUi8IJmV,"Amazon Kindle Paperwhite - eBook reader - 4 GB - 6 monochrome Paperwhite - touchscreen - Wi-Fi - black,,,",76.4,MEDIUM TRUST,4.77,4.77,0.0,3176,1755,1421,55.3,0.81,0.98,24.7,54.0,0.0,1755,1287
+AVsRjfwAU2_QcyX9PHqe,"Amazon 5W USB Official OEM Charger and Power Adapter for Fire Tablets and Kindle eReaders,,,
+Amazon 5W USB Official OEM Charger and Power Adapter for Fire Tablets and Kindle eReaders,,,",76.4,MEDIUM TRUST,4.44,4.44,0.0,402,112,290,27.9,0.74,0.0,46.2,32.4,0.0,112,83
+AVpfv-vJilAPnD_xhk-O,Amazon Kindle Charger Power Adapter Wall Charger And Usb Cable Micro Usb Cord,76.6,MEDIUM TRUST,4.67,5.0,-0.33,9,3,6,33.3,0.89,0.0,42.2,35.9,0.0,3,3
+AVpfl8cLLJeJML43AE3S,"Echo (White),,,
+Echo (White),,,",76.6,MEDIUM TRUST,4.67,4.7,-0.02,6621,2512,4109,37.9,0.74,0.96,24.6,39.7,10.3,2512,1686
+AVpiGyzGLJeJML43iUdJ,AmazonBasics Bluetooth Keyboard for Android Devices - Black,76.6,MEDIUM TRUST,4.33,4.67,-0.33,6,3,3,50.0,0.33,0.0,21.1,56.7,0.0,3,2
+AVpftoij1cnluZ0-p5n2,"Brand New Amazon Kindle Fire 16gb 7 Ips Display Tablet Wifi 16 Gb Blue,,,",77.0,MEDIUM TRUST,4.86,4.9,-0.04,51,31,20,60.8,0.86,1.0,19.2,57.6,0.0,31,26
+AVpiZQ8r1cnluZ0-M3MN,AmazonBasics Nespresso Pod Storage Drawer - 50 Capsule Capacity,77.3,MEDIUM TRUST,5.0,5.0,0.0,1,0,1,0.0,1.0,0.0,50.0,25.6,0.0,0,0
+AVpgEm3DLJeJML43Id7b,AmazonBasics 16-Gauge Speaker Wire - 100 Feet,77.4,MEDIUM TRUST,5.0,5.0,0.0,5,1,4,20.0,1.0,0.0,50.0,25.4,0.0,1,1
+AVzoFq6UvKc47QAVe9NB,Echo Dot (Previous generation),77.7,MEDIUM TRUST,4.0,4.0,0.0,1,1,0,100.0,0.0,0.0,6.7,67.7,0.0,1,0
+AVpff7_VilAPnD_xc1E_,"Brand New Amazon Kindle Fire 16gb 7 Ips Display Tablet Wifi 16 Gb Blue,,,",77.7,MEDIUM TRUST,5.0,5.0,0.0,1,0,1,0.0,1.0,0.0,50.0,24.2,0.0,0,0
+AVqkIdntQMlgsOJE6fuB,"Fire Tablet, 7 Display, Wi-Fi, 8 GB - Includes Special Offers, Black",77.7,MEDIUM TRUST,4.6,4.77,-0.17,30,17,13,56.7,0.63,0.97,18.3,55.9,0.0,17,12
+AVpfzuRNilAPnD_xipqB,AmazonBasics External Hard Drive Case,78.2,MEDIUM TRUST,4.5,4.5,0.0,6,2,4,33.3,0.67,0.0,33.3,39.4,0.0,2,2
+AV-XeQLWuC1rwyj_gbP5,Amazon Fire TV with 4K Ultra HD and Alexa Voice Remote (Pendant Design) | Streaming Media Player,78.3,MEDIUM TRUST,5.0,5.0,0.0,4,1,3,25.0,1.0,1.0,50.0,22.5,0.0,1,0
+AVpg3q4RLJeJML43TxA_,"Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16 GB, Green Kid-Proof Case",78.3,MEDIUM TRUST,3.67,3.5,0.17,6,4,2,66.7,0.33,0.0,12.2,60.1,0.0,4,2
+AVqkIhwDv8e3D1O-lebb,"All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 16 GB - Includes Special Offers, Magenta",78.4,MEDIUM TRUST,4.59,4.57,0.01,2817,1008,1809,35.8,0.67,0.96,20.0,38.1,10.6,1008,691
+AVpf68A5ilAPnD_xkjSq,AmazonBasics Backpack for Laptops up to 17-inches,79.0,MEDIUM TRUST,4.16,4.08,0.08,25,12,13,48.0,0.4,0.0,20.8,49.3,0.0,12,9
+AVpfiBlyLJeJML43-4Tp,Unknown Product,79.0,MEDIUM TRUST,2.46,2.33,0.13,13,7,6,53.8,0.31,0.0,23.1,46.8,0.0,7,4
+AVpgNzjwLJeJML43Kpxn,AmazonBasics AAA Performance Alkaline Batteries (36 Count),79.1,MEDIUM TRUST,4.4,4.42,-0.02,7461,1682,5779,22.5,0.73,0.0,43.0,26.6,0.0,1682,960
+AVqkIiKWnnc1JgDc3khH,"All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 32 GB - Includes Special Offers, Magenta",79.2,MEDIUM TRUST,4.59,4.53,0.06,158,83,75,52.5,0.69,0.96,19.9,49.6,0.0,83,57
+AVpe7xlELJeJML43ypLz,AmazonBasics AA Performance Alkaline Batteries (48 Count) - Packaging May Vary,79.2,MEDIUM TRUST,4.42,4.43,-0.01,3397,722,2675,21.3,0.74,0.0,43.6,25.8,0.0,722,412
+AVpe7nGV1cnluZ0-aG2o,AmazonBasics Nylon CD/DVD Binder (400 Capacity),79.4,MEDIUM TRUST,4.25,5.0,-0.75,4,1,3,25.0,0.75,0.0,32.5,36.2,0.0,1,1
+AVpf_znpilAPnD_xlvAF,Unknown Product,79.7,MEDIUM TRUST,3.5,5.0,-1.5,10,7,3,70.0,0.5,0.0,15.0,52.8,0.0,7,2
+AWYAV-i9Iwln0LfXqrUq,Echo Spot Pair Kit (Black),80.3,HIGH TRUST,4.5,5.0,-0.5,2,1,1,50.0,0.5,1.0,28.3,37.3,0.0,1,0
+AVpidLjVilAPnD_xEVpI,Unknown Product,80.7,HIGH TRUST,4.56,4.55,0.01,257,111,146,43.2,0.7,0.94,20.2,44.3,0.0,111,71
+AVpfIfGA1cnluZ0-emyp,Unknown Product,81.1,HIGH TRUST,4.21,3.95,0.25,73,29,44,39.7,0.68,0.7,19.6,43.6,0.0,29,21
+AVzoGHhAglJLPUi8GfzY,Unknown Product,81.1,HIGH TRUST,4.29,5.0,-0.71,7,4,3,57.1,0.57,0.29,22.7,40.4,0.0,4,2
+AVpjEN4jLJeJML43rpUe,"Brand New Amazon Kindle Fire 16gb 7 Ips Display Tablet Wifi 16 Gb Blue,,,",81.7,HIGH TRUST,4.5,4.51,-0.0,1042,415,627,39.8,0.63,0.95,20.9,40.1,0.0,415,267
+AVpe7JuRilAPnD_xQ_M6,Oem Amazon Kindle Power Usb Adapter Wall Travel Charger Fire/dx/+micro Usb Cable,82.0,HIGH TRUST,1.0,1.0,0.0,4,1,3,25.0,0.0,0.0,20.0,40.0,0.0,1,0
+AV1YE_muvKc47QAVgpwE,Unknown Product,82.4,HIGH TRUST,4.71,4.71,-0.0,5056,1581,3475,31.3,0.77,0.97,24.0,34.7,0.0,1581,998
+AVpfpK8KLJeJML43BCuD,Unknown Product,82.5,HIGH TRUST,4.52,4.54,-0.01,647,230,417,35.5,0.67,0.92,20.6,37.8,0.0,230,149
+AVpe5Q3sLJeJML43xt5X,AmazonBasics Single-Door Folding Metal Dog Crate - Large (42x28x30 Inches),82.7,HIGH TRUST,5.0,5.0,0.0,1,0,1,0.0,1.0,0.0,50.0,7.5,0.0,0,0
+AVpf2cQm1cnluZ0-sb5y,Amazon Kindle Replacement Power Adapter (Fits Latest Generation Kindle and Kindle DX) For shipment in the U.S only,82.8,HIGH TRUST,2.8,2.33,0.47,5,2,3,40.0,0.4,0.0,21.3,36.0,0.0,2,1
+AVqVGWLKnnc1JgDc3jF1,"Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16 GB, Green Kid-Proof Case",83.0,HIGH TRUST,4.53,4.52,0.0,1686,503,1183,29.8,0.66,0.94,22.2,34.5,0.0,503,307
+AVzvXXwEvKc47QAVfRhx,"Echo (White),,,
+Echo (White),,,",83.0,HIGH TRUST,3.12,2.0,1.12,8,4,4,50.0,0.5,0.0,20.0,36.5,0.0,4,1
+AVphgVaX1cnluZ0-DR74,"Fire Tablet, 7 Display, Wi-Fi, 8 GB - Includes Special Offers, Magenta",83.1,HIGH TRUST,4.45,4.46,-0.0,10966,3490,7476,31.8,0.59,0.95,21.5,35.0,0.0,3490,2140
+AVpf_4sUilAPnD_xlwYV,Unknown Product,83.2,HIGH TRUST,3.07,2.38,0.69,15,7,8,46.7,0.27,0.0,13.8,42.2,0.0,7,4
+AV1YnR7wglJLPUi8IJmi,"Echo (White),,,
+Echo (White),,,",83.7,HIGH TRUST,4.42,4.46,-0.03,372,119,253,32.0,0.59,0.93,18.0,36.2,0.0,119,80
+AVzRlorb-jtxr-f3ygvQ,"Fire Tablet, 7 Display, Wi-Fi, 8 GB - Includes Special Offers, Black",83.9,HIGH TRUST,4.5,4.38,0.12,16,3,13,18.8,0.69,0.0,34.0,19.9,0.0,3,3
+AWMjN1SSIwln0LfXmWs7,"All-new Echo (2nd Generation) with improved sound, powered by Dolby, and a new design Walnut Finish",84.4,HIGH TRUST,5.0,5.0,0.0,2,0,2,0.0,1.0,1.0,50.0,1.9,0.0,0,0
+AWMjXUGdHh53nbDRJ9LA,Amazon Echo (2nd Generation) Smart Assistant Oak Finish Priority Shipping,85.5,HIGH TRUST,4.33,4.5,-0.17,3,1,2,33.3,0.33,1.0,21.1,27.4,0.0,1,0
+AVpfTWGdLJeJML436ocu,AmazonBasics Double-Door Folding Metal Dog Crate - Medium (36x23x25 Inches),89.2,HIGH TRUST,3.5,3.5,0.0,2,0,2,0.0,0.0,0.0,0.0,36.1,0.0,0,0
+AVpe6nyKLJeJML43yOe2,AmazonBasics 11.6-Inch Laptop Sleeve,91.2,HIGH TRUST,4.0,4.0,0.0,2,0,2,0.0,0.5,0.0,21.7,7.6,0.0,0,0
+AV2ElNnuvKc47QAVouhY,AmazonBasics Silicone Hot Handle Cover/Holder - Red,96.6,HIGH TRUST,4.0,4.0,0.0,1,0,1,0.0,0.0,0.0,6.7,4.6,0.0,0,0

@@ -1,0 +1,27 @@
+=======================================================
+  ReviewGuard — Data Quality Report
+=======================================================
+
+  Missing Fields
+  Status : ✅ PASS
+  Issues : 0
+
+  Duplicate Reviews
+  Status : ⚠️  ISSUES FOUND
+  Issues : 151210
+
+  Suspicious Reviewers
+  Status : ⚠️  ISSUES FOUND
+  Issues : 8495
+
+  Rating Anomalies
+  Status : ⚠️  ISSUES FOUND
+  Issues : 43
+
+  Date Validation
+  Status : ⚠️  ISSUES FOUND
+  Issues : 336693
+
+-------------------------------------------------------
+  TOTAL ISSUES FOUND: 496441
+=======================================================

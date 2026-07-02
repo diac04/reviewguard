@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.egg-info/
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large data files (exceed GitHub limits)
+data/raw/*.csv
+data/processed/*.csv
+
+# ML models (regeneratable)
+models/*.pkl
+
+# System
+.DS_Store
+Thumbs.db
+.vscode/
+.env
+
+# Large HTML files
+outputs/network_html/*.html
