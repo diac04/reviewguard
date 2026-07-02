@@ -15,28 +15,23 @@ Combines **statistical analysis**, **machine learning**, and **graph theory** to
 
 ## 📸 Dashboard Preview
 
-### Overview — Executive Summary
-![Overview](dashboard\screenshots\landingpage.png)
-![Overview](dashboard\screenshots\overview1.png)
-![Overview](dashboard\screenshots\overview2.png)
+### Landing Page
+![Landing Page](dashboard/screenshots/landingpage.png)
 
+### Overview — Executive Summary & Analytics
+![Overview](dashboard/screenshots/overview1.png)
+![Overview Continued](dashboard/screenshots/overview2.png)
 
 ### Product Explorer — Filter & Search 89 Products
-![Product Explorer](dashboard\screenshots\productexplorer.png)
+![Product Explorer](dashboard/screenshots/productexplorer.png)
 
 ### Product Details — Deep-Dive Analysis
-![Product Details](dashboard\screenshots\prpductdetails1.png)
-![Product Details](dashboard\screenshots\productdetails2.png)
-
-
+![Product Details](dashboard/screenshots/prpductdetails1.png)
+![Product Details Continued](dashboard/screenshots/productdetails2.png)
 
 ### Methodology — Multi-Signal Approach
-![Methodology](dashboard\screenshots\methodology1.png)
-![Methodology](dashboard\screenshots\methodology2.png)
-
-
-
-
+![Methodology](dashboard/screenshots/methodology1.png)
+![Methodology Continued](dashboard/screenshots/methodology2.png)
 ---
 
 ## 📊 Results at a Glance
