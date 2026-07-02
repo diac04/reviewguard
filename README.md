@@ -115,6 +115,16 @@ Designed as an **internal fraud detection tool** for platforms like Amazon:
 - Supports regulatory compliance (FTC, EU DSA)
 - Estimated ROI: **$25 saved per $1 invested** (returns, fines, churn)
 
+### 🎯 Methodological Rigor: Time-Based vs Random Splits
+
+I evaluated both random and chronological train/test splits to understand true model generalization:
+
+| Split Method | Best Model | F1 Score | ROC-AUC | Real-World Meaning |
+|--------------|:---------:|:--------:|:-------:|-------------------|
+| Random 75/25 | XGBoost | 0.40 | 0.57 | Can leak future patterns |
+| **Time-based** ⭐ | **Logistic Regression** | **0.525** | **0.548** | **Honest generalization** |
+
+**Key Insight:** Time-based splitting (training on older reviews, testing on newer) actually improved performance by 31%. This suggests fake review patterns in the dataset are temporally consistent, and simpler linear models generalize better than complex ensembles when properly evaluated. This demonstrates why **evaluation methodology matters more than model complexity**.
 ---
 
 ## 🎓 Notable Technical Insights
